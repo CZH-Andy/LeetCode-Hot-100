@@ -5,18 +5,19 @@
  * Difficulty: Medium
  *
  * Idea:
- * - 
+ * - 将每个字符串排序后作为哈希 key。
+ * - 排序结果相同的字符串属于同一组，最后收集哈希表中的所有分组。
  *
  * Complexity:
- * - Time:
- * - Space:
+ * - Time: O(n * k log k), where k is the maximum string length.
+ * - Space: O(n * k)
  *
  * Pitfalls:
  * - 
  *
  * Review:
- * - First pass:
- * - Status: TODO / HINT / DONE / REVIEW / STAR
+ * - First pass: 2026-07-05
+ * - Status: DONE
  */
 
 #include <algorithm>
@@ -46,7 +47,16 @@ using namespace std;
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-
+        unordered_map<string, vector<string>> m;
+        for (string &s : strs) {
+            string sorted_s = s;
+            ranges::sort(sorted_s);
+            m[sorted_s].push_back(s);
+        }
+        vector<vector<string>> ans;
+        ans.reserve(m.size());
+        for (auto& [_, value] : m) ans.push_back(value);
+        return ans;
     }
 };
 
