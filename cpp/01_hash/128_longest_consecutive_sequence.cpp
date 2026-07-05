@@ -5,18 +5,19 @@
  * Difficulty: Medium
  *
  * Idea:
- * - 
+ * - 先把所有数字放入哈希集合，支持 O(1) 查询某个数是否存在。
+ * - 只从没有前驱 x - 1 的数字开始向右扩展，避免重复统计同一段连续序列。
  *
  * Complexity:
- * - Time:
- * - Space:
+ * - Time: O(n)
+ * - Space: O(n)
  *
  * Pitfalls:
  * - 
  *
  * Review:
- * - First pass:
- * - Status: TODO / HINT / DONE / REVIEW / STAR
+ * - First pass: 2026-07-05
+ * - Status: DONE
  */
 
 #include <algorithm>
@@ -46,7 +47,15 @@ using namespace std;
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-
+        unordered_set<int> s(nums.begin(), nums.end());
+        int ans = 0;
+        for (int left : s) {
+            if (s.contains(left - 1)) continue;
+            int right = left + 1;
+            while (s.contains(right)) right++;
+            ans = max(ans, right - left);
+        }
+        return ans;
     }
 };
 
