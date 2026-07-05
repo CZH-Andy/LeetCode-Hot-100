@@ -1,0 +1,70 @@
+/*
+ * Problem: 45. 跳跃游戏 II / Jump Game II
+ * Link: https://leetcode.cn/problems/jump-game-ii/
+ * Chapter: 贪心算法
+ * Difficulty: Medium
+ *
+ * Idea:
+ * - 
+ *
+ * Complexity:
+ * - Time:
+ * - Space:
+ *
+ * Pitfalls:
+ * - 
+ *
+ * Review:
+ * - First pass:
+ * - Status: TODO / HINT / DONE / REVIEW / STAR
+ */
+
+#include <algorithm>
+#include <cassert>
+#include <climits>
+#include <deque>
+#include <functional>
+#include <iostream>
+#include <limits>
+#include <map>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <stack>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <utility>
+#include <vector>
+using namespace std;
+
+#ifdef LOCAL
+#include "common/leetcode.hpp"
+#endif
+
+
+class Solution {
+public:
+    int jump(vector<int>& nums) {
+
+    }
+};
+
+#ifdef LOCAL
+int main() {
+    [[maybe_unused]] Solution solution;
+
+    {
+        vector<int> nums = {2, 3, 1, 1, 4};
+        assert((solution.jump(nums) == 2));
+    }
+
+    {
+        vector<int> nums = {2, 3, 0, 1, 4};
+        assert((solution.jump(nums) == 2));
+    }
+
+    cout << "All tests passed.\n";
+    return 0;
+}
+#endif

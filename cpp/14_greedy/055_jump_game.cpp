@@ -1,0 +1,70 @@
+/*
+ * Problem: 55. 跳跃游戏 / Jump Game
+ * Link: https://leetcode.cn/problems/jump-game/
+ * Chapter: 贪心算法
+ * Difficulty: Medium
+ *
+ * Idea:
+ * - 
+ *
+ * Complexity:
+ * - Time:
+ * - Space:
+ *
+ * Pitfalls:
+ * - 
+ *
+ * Review:
+ * - First pass:
+ * - Status: TODO / HINT / DONE / REVIEW / STAR
+ */
+
+#include <algorithm>
+#include <cassert>
+#include <climits>
+#include <deque>
+#include <functional>
+#include <iostream>
+#include <limits>
+#include <map>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <stack>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <utility>
+#include <vector>
+using namespace std;
+
+#ifdef LOCAL
+#include "common/leetcode.hpp"
+#endif
+
+
+class Solution {
+public:
+    bool canJump(vector<int>& nums) {
+
+    }
+};
+
+#ifdef LOCAL
+int main() {
+    [[maybe_unused]] Solution solution;
+
+    {
+        vector<int> nums = {2, 3, 1, 1, 4};
+        assert((solution.canJump(nums) == true));
+    }
+
+    {
+        vector<int> nums = {3, 2, 1, 0, 4};
+        assert((solution.canJump(nums) == false));
+    }
+
+    cout << "All tests passed.\n";
+    return 0;
+}
+#endif
