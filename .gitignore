@@ -3,4 +3,4 @@ build/
 *.out
 *.o
 *.dSYM/
-
+notes/notes*.md

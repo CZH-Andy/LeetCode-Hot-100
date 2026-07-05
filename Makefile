@@ -1,5 +1,5 @@
 CXX ?= clang++
-CXXFLAGS ?= -std=c++17 -Wall -Wextra -Wshadow -O2 -DLOCAL -I.
+CXXFLAGS ?= -std=c++20 -Wall -Wextra -Wshadow -O2 -DLOCAL -I.
 BUILD_DIR ?= build
 
 .PHONY: run clean
