@@ -5,18 +5,19 @@
  * Difficulty: Easy
  *
  * Idea:
- * - 
+ * - 遍历数组，用哈希表记录已经访问过的数字及其下标。
+ * - 对每个数，先检查 target - nums[i] 是否已经出现过。
  *
  * Complexity:
- * - Time:
- * - Space:
+ * - Time: O(n)
+ * - Space: O(n)
  *
  * Pitfalls:
  * - 
  *
  * Review:
- * - First pass:
- * - Status: TODO / HINT / DONE / REVIEW / STAR
+ * - First pass: 2026-07-05
+ * - Status: DONE
  */
 
 #include <algorithm>
@@ -46,7 +47,14 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-
+        int n = nums.size();
+        unordered_map<int, int> idx;
+        for (int j = 0; j < n; j++) {
+            auto it = idx.find(target - nums[j]);
+            if (it != idx.end()) return {it->second, j};
+            idx[nums[j]] = j;
+        }
+        return {};
     }
 };
 
