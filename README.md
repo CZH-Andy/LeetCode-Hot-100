@@ -34,9 +34,9 @@ provides local definitions in `common/leetcode.hpp` for local testing.
 
 | # | Title | CN Title | Chapter | Difficulty | Status | File |
 |---:|---|---|---|---|---|---|
-| 1 | Two Sum | 两数之和 | 哈希 | EASY | TODO | `cpp/01_hash/001_two_sum.cpp` |
-| 49 | Group Anagrams | 字母异位词分组 | 哈希 | MEDIUM | TODO | `cpp/01_hash/049_group_anagrams.cpp` |
-| 128 | Longest Consecutive Sequence | 最长连续序列 | 哈希 | MEDIUM | TODO | `cpp/01_hash/128_longest_consecutive_sequence.cpp` |
+| 1 | Two Sum | 两数之和 | 哈希 | EASY | DONE | `cpp/01_hash/001_two_sum.cpp` |
+| 49 | Group Anagrams | 字母异位词分组 | 哈希 | MEDIUM | DONE | `cpp/01_hash/049_group_anagrams.cpp` |
+| 128 | Longest Consecutive Sequence | 最长连续序列 | 哈希 | MEDIUM | DONE | `cpp/01_hash/128_longest_consecutive_sequence.cpp` |
 | 283 | Move Zeroes | 移动零 | 双指针 | EASY | TODO | `cpp/02_two_pointers/283_move_zeroes.cpp` |
 | 11 | Container With Most Water | 盛最多水的容器 | 双指针 | MEDIUM | TODO | `cpp/02_two_pointers/011_container_with_most_water.cpp` |
 | 15 | 3Sum | 三数之和 | 双指针 | MEDIUM | TODO | `cpp/02_two_pointers/015_3sum.cpp` |
@@ -134,4 +134,3 @@ provides local definitions in `common/leetcode.hpp` for local testing.
 | 75 | Sort Colors | 颜色分类 | 技巧 | MEDIUM | TODO | `cpp/17_tricks/075_sort_colors.cpp` |
 | 31 | Next Permutation | 下一个排列 | 技巧 | MEDIUM | TODO | `cpp/17_tricks/031_next_permutation.cpp` |
 | 287 | Find the Duplicate Number | 寻找重复数 | 技巧 | MEDIUM | TODO | `cpp/17_tricks/287_find_the_duplicate_number.cpp` |
-
